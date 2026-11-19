@@ -1,0 +1,15 @@
+# Synthetic AnyTLS source for tests. Every value is made up.
+dns:
+  nameserver:
+    - 192.0.2.53
+  nameserver-policy:
+    "+.example.invalid": https://dns-a.example.invalid/dns-query
+proxies:
+  - {name: "x 香港 01 (1x)", type: anytls, server: a1.example.invalid, port: 443, password: synthetic-anytls-pass, sni: a1.example.invalid, udp: true, client-fingerprint: chrome, alpn: [h2, http/1.1]}
+  - {name: "x 香港住宅 01", type: anytls, server: a1.example.invalid, port: 444, password: synthetic-anytls-pass, sni: a1.example.invalid, udp: true, client-fingerprint: chrome, alpn: [h2, http/1.1]}
+  - {name: "x 日本 01", type: anytls, server: a2.example.invalid, port: 443, password: synthetic-anytls-pass, sni: a2.example.invalid, udp: true, client-fingerprint: chrome, alpn: [h2, http/1.1], idle-session-timeout: 90s, min-idle-session: 0}
+  - {name: "x 台湾 01", type: anytls, server: a2.example.invalid, port: 445, password: synthetic-anytls-pass, sni: a2.example.invalid, udp: true}
+  - {name: "x 新加坡 01", type: anytls, server: a3.example.invalid, port: 443, password: synthetic-anytls-pass, sni: a3.example.invalid, udp: true, padding-scheme: "stop=2\n0=30-30", client-metadata: synthetic}
+  - {name: "x 德国 01", type: anytls, server: a3.example.invalid, port: 446, password: synthetic-anytls-pass, sni: a3.example.invalid, udp: true}
+  - {name: "x 美国住宅 01", type: anytls, server: a3.example.invalid, port: 447, password: synthetic-anytls-pass, sni: a3.example.invalid, udp: true}
+  - {name: "x 韩国 01", type: anytls, server: a2.example.invalid, port: 448, password: synthetic-anytls-pass, sni: a2.example.invalid, udp: true}

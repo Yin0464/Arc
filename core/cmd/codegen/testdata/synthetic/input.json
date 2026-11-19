@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "sources": [
+  {"id": "tsrc", "proto": "trojan", "sub": "t.yaml", "types": ["trojan"],
+   "name_prefix": "<T>", "region_regex": "^<T>\\s*(\\p{Han}+)\\d",
+   "clean_from_first_han": false, "clean_cut_at": "", "residential_match": ""},
+  {"id": "asrc", "proto": "anytls", "sub": "a.yaml", "types": ["anytls"],
+   "name_prefix": "", "region_regex": "",
+   "clean_from_first_han": true, "clean_cut_at": " (", "residential_match": "住宅"}
+ ],
+ "aliases": {"星洲": "新加坡", "美國": "美国"},
+ "other_first": ["美国"],
+ "naming": {"regular": "{country} {n:02}", "residential": "{country}住宅 {n}"},
+ "yaml_keys": {"padding": "padding-scheme", "metadata": "client-metadata"}
+}

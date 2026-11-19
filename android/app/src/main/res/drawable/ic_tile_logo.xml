@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 快捷设置磁贴图标: 结构同 Clash Meta 的 ic_logo_service (大固有尺寸 + 图形铺满视口, 无 group/tint/attr)。
+     图形按原始 1:1 坐标绘制, 尾巴收短到视口内, 范围约 0.6..23.4。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 18.84,3.36 A 11,11 0 0,0 1.92,16.4 C 2.3,18.2 1.8,19.9 0.6,21.8 L 6.2,16.2 A 6.88,6.88 0 0,1 16.2,6.2 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 5.16,20.64 A 11,11 0 0,0 22.08,7.6 C 21.7,5.8 22.2,3.2 23.4,0.6 L 6.88,17.12 L 16.88,8.48 Q 18.2,7.52 18.52,9.12 A 6.88,6.88 0 0,1 7.8,17.8 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 11.74,6.48 Q 12,6.16 12.26,6.48 C 12.8,8.92 15.08,11.2 17.52,11.74 Q 17.84,12 17.52,12.26 C 15.08,12.8 12.8,15.08 12.26,17.52 Q 12,17.84 11.74,17.52 C 11.2,15.08 8.92,12.8 6.48,12.26 Q 6.16,12 6.48,11.74 C 8.92,11.2 11.2,8.92 11.74,6.48 Z" />
+</vector>

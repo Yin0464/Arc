@@ -1,0 +1,10 @@
+domain:akamai.com:@cn
+domain:amazon.cn:@cn
+domain:github.com
+domain:google.cn:@cn
+domain:google.com
+domain:googleapis.cn
+domain:gstatic.com
+domain:gvt1.com
+full:dl.google.com:@cn
+full:redirector.gvt1.com:@cn

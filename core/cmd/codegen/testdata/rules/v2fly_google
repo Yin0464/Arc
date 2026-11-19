@@ -1,0 +1,8 @@
+# fixture excerpt of v2fly google
+include:google-cn
+google.com
+full:dl.google.com
+gstatic.com
+gvt1.com
+full:redirector.gvt1.com
+keyword:google

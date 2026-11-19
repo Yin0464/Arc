@@ -1,0 +1,23 @@
+android/.gradle/
+android/**/build/
+android/.cxx/
+**/.idea/
+**/*.iml
+**/__pycache__/
+*.log
+**/.kotlin/
+/Arc.apk
+/Arc-*.apk
+
+# private data never lives in this tree (see tools/private.py); belt and braces
+/subs/
+*.jks
+*.keystore
+keystore.properties
+
+tools/.pin_env
+tools/.jdk_prune
+
+# build products: build.sh regenerates them every build
+core/internal/router/*.bin
+android/app/src/main/jniLibs/

@@ -1,0 +1,12 @@
+# Synthetic Trojan source for tests. Every value is made up.
+dns:
+  proxy-server-nameserver:
+    - https://dns-t.example.invalid/dns-query
+    - tls://ignored.example.invalid
+proxies:
+  - {name: "<T> 香港1", type: trojan, server: t1.example.invalid, port: 443, password: synthetic-trojan-pass, sni: t1.example.invalid, udp: true, skip-cert-verify: true}
+  - {name: "<T> 香港2", type: trojan, server: t1.example.invalid, port: 8443, password: synthetic-trojan-pass, sni: t1.example.invalid, udp: true, skip-cert-verify: true}
+  - {name: "<T> 星洲3", type: trojan, server: t1.example.invalid, port: 9443, password: synthetic-trojan-pass, sni: t1.example.invalid, udp: true, skip-cert-verify: true}
+  - {name: "<T> 美國4", type: trojan, server: t1.example.invalid, port: 10443, password: synthetic-trojan-pass, sni: t1.example.invalid, udp: true, skip-cert-verify: true}
+  - {name: "unprefixed 香港", type: trojan, server: t9.example.invalid, port: 443, password: other}
+  - {name: "<T> 日本5", type: vmess, server: t9.example.invalid, port: 443, uuid: 00000000-0000-4000-8000-000000000001}
